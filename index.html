@@ -26,7 +26,7 @@
 <meta property="og:image:alt" content="Horizonte Comercio Integral — Construimos alrededor de cómo tu negocio ya trabaja">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b2631'/%3E%3Cpath d='M9.5 8h3.4v6.3h6.2V8h3.4v16h-3.4v-6.6h-6.2V24H9.5z' fill='%23faf9f6'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Crect width='1000' height='1000' fill='%231b2631'/%3E%3Cpath fill-rule='evenodd' fill='%23faf9f6' d='M200 470a300 300 0 1 0 600 0a300 300 0 1 0 -600 0ZM300 500a200 200 0 1 0 400 0a200 200 0 1 0 -400 0Z'/%3E%3Cpath fill='%23faf9f6' d='M0 505Q500 435 1000 505L1000 575Q500 645 0 575Z'/%3E%3C/svg%3E">
 
 <style>
   :root {
@@ -88,12 +88,8 @@
   /* ---------- encabezado ---------- */
   header { border-bottom: 1px solid var(--line); }
   .header-inner { display: flex; align-items: center; gap: 14px; padding-top: 14px; padding-bottom: 14px; }
-  .badge {
-    width: 38px; height: 38px;
-    background: var(--ink); color: var(--paper);
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-display); font-weight: 700; font-size: 16px;
-    flex-shrink: 0;
+  .badge { /* el símbolo "Horizonte de sucesos" (DECISION-011), inline porque la política bloquea archivos externos */
+    width: 38px; height: 38px; display: block; flex-shrink: 0;
   }
   .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--ink); line-height: 1.15; }
   .brand-sub { font-family: var(--font-mono); font-size: 10px; letter-spacing: .14em; color: var(--accent-ink); text-transform: uppercase; }
@@ -234,7 +230,7 @@
 
 <header>
   <div class="wrap header-inner">
-    <div class="badge" aria-hidden="true">H</div>
+    <svg class="badge" viewBox="0 0 1000 1000" aria-hidden="true" focusable="false"><circle cx="500" cy="500" r="500" fill="#1b2631"/><path fill-rule="evenodd" fill="#cc6a15" d="M200 460a300 300 0 1 0 600 0a300 300 0 1 0 -600 0ZM300 500a200 200 0 1 0 400 0a200 200 0 1 0 -400 0Z"/><path fill="#cc6a15" d="M0 515Q500 435 1000 515L1000 565Q500 645 0 565Z"/></svg>
     <div>
       <div class="brand-name">Horizonte Comercio Integral</div>
       <div class="brand-sub">Productos · Software · Consultoría</div>
